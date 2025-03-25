@@ -1,17 +1,13 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-
-  output: 'export', 
-
-  // Optional: Set the base path if deploying to a subdirectory (e.g., GitHub Pages)
-  basePath: '/quiz-app',
-
-  // Additional configurations you may need
-  reactStrictMode: true, // Enable React Strict Mode for development
+  output: 'export',                   // Static export
+  basePath: '/quiz-app',              // Base path for GitHub Pages
+  assetPrefix: '/quiz-app/',          // Ensures assets load from the right location
+  reactStrictMode: true,
   images: {
-    unoptimized: true,
-  },
+    unoptimized: true                 // Ensure images are statically exported
+  }
 };
 
 export default nextConfig;
