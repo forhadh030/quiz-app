@@ -109,7 +109,7 @@ export default function QuizSetup() {
             <SelectTrigger id="amount">
               <SelectValue placeholder="Select number of questions" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white shadow-md rounded-md z-50">
               <SelectItem value="5">5</SelectItem>
               <SelectItem value="10">10</SelectItem>
               <SelectItem value="15">15</SelectItem>
@@ -128,7 +128,7 @@ export default function QuizSetup() {
             <SelectTrigger id="category">
               <SelectValue placeholder={fetchingCategories ? "Loading categories..." : "Any Category"} />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white shadow-md rounded-md z-50">
               <SelectItem value="any">Any Category</SelectItem>
               {categories.map((category) => (
                 <SelectItem key={category.id} value={category.id.toString()}>
@@ -145,7 +145,7 @@ export default function QuizSetup() {
             <SelectTrigger id="difficulty">
               <SelectValue placeholder="Any Difficulty" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white shadow-md rounded-md z-50">
               <SelectItem value="any">Any Difficulty</SelectItem>
               <SelectItem value="easy">Easy</SelectItem>
               <SelectItem value="medium">Medium</SelectItem>
@@ -160,7 +160,7 @@ export default function QuizSetup() {
             <SelectTrigger id="type">
               <SelectValue placeholder="Any Type" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="bg-white shadow-md rounded-md z-50">
               <SelectItem value="any">Any Type</SelectItem>
               <SelectItem value="multiple">Multiple Choice</SelectItem>
               <SelectItem value="boolean">True / False</SelectItem>

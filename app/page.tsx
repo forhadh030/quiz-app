@@ -2,7 +2,6 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 
 export default function Home() {
-  const basePath = "/quiz-app";  // Add basePath
 
   return (
     <main className="container mx-auto px-4 py-12 flex flex-col items-center justify-center min-h-[80vh]">
@@ -16,7 +15,7 @@ export default function Home() {
             Challenge yourself with questions from various categories and difficulty levels. See how many you can answer correctly!
           </p>
           <Link
-            href={`${basePath}/setup`}    // Use basePath in the href
+            href="/setup"    // Use basePath in the href
             className="px-8 py-3 bg-[#2563eb] text-white rounded-md hover:bg-[#1d4ed8] font-medium text-lg transition-colors shadow-md hover:shadow-lg"
           >
             Start Quiz
